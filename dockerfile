@@ -4,6 +4,9 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /rasa
 
+# Upgrade pip
+RUN pip install --no-cache-dir --upgrade pip
+
 # Copy the requirements file
 COPY requirements.txt .
 
