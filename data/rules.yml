@@ -1,0 +1,22 @@
+version: "3.0"
+
+rules:
+
+# - rule: Handle out-of-scope questions
+#   condition:
+#     - active_loop: null
+#     - slot_was_set:
+#           - requested_slot: null
+#   steps:
+#   - intent: null
+#   - action: utter_default_response
+
+# - rule: Say goodbye anytime the user says goodbye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot

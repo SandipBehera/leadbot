@@ -1,0 +1,97 @@
+version: "3.0"
+
+intents:
+  - greet
+  - supply_contact_name
+  - supply_contact_email
+  - supply_contact_phone
+  - supply_service_info
+  - take_service_info
+  # - goodbye
+  # - affirm
+  # - deny
+  # - mood_great
+  # - mood_unhappy
+  # - bot_challenge
+entities:
+- user_name
+- email
+- phone
+- service
+
+slots:
+  user_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: user_name
+  email:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: email
+  phone:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: phone
+
+  service:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: service
+
+responses:
+  # utter_greet:
+  # - text: "Hey! How are you?"
+
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  # - text: "Did that help you?"
+
+  # utter_happy:
+  # - text: "Great, carry on!"
+
+  # utter_goodbye:
+  # - text: "Bye"
+
+  # utter_iamabot:
+  # - text: "I am a bot, powered by Rasa."
+  
+  utter_greet:
+  - text: "Hey! welcome to clumps software"
+
+  utter_ask_for_contact_name:
+  - text: Could you please provide your name?
+
+  utter_ask_for_contact_email:
+  - text: Could you please provide your email?
+
+  utter_ask_for_contact_phone:
+  - text: Could you please provide your phone?
+
+  utter_ask_for_help:
+  - text: How may I help you {user_name} today?
+
+  utter_service_info:
+  - text: Sure, {user_name} ! We provide services like web development, mobile app development, digital marketing, etc.
+
+  utter_more_service_info:
+  - text: Can you please tell me more about your {service} related idea?
+
+  utter_say_thank_you:
+  - text: Thank you {user_name} for provided your info.
+  
+  utter_default_response:
+  - text: "I'm sorry, I didn't understand. Could you please rephrase your question?"
+
+actions:
+- action_default_response
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

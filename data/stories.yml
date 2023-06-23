@@ -1,0 +1,51 @@
+version: "3.0"
+
+stories:
+
+- story: user supplies customer info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_for_contact_name
+  - intent: supply_contact_name
+  - action: utter_ask_for_contact_email
+  - intent: supply_contact_email
+  - action: utter_ask_for_contact_phone
+  - intent: supply_contact_phone
+  - action: utter_say_thank_you
+  - action: utter_ask_for_help
+
+
+- story: user supplies service info
+  steps:
+  - intent: supply_service_info
+  - action: utter_service_info
+  - intent: take_service_info
+  - action: utter_more_service_info
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
