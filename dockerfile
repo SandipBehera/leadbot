@@ -5,24 +5,19 @@ FROM python:3.8.2
 WORKDIR /rasa
 
 # Upgrade pip
-RUN pip install --no-cache-dir --upgrade pip
+RUN pip3 install --no-cache-dir --upgrade pip
 
 # Copy the requirements file
 COPY requirements.txt .
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy the source code to the container
 COPY . .
 
 # Expose the Rasa port
 EXPOSE 5005
-
-# Install or upgrade websockets
-RUN pip install --no-cache-dir --upgrade websockets==9.1.0
-RUN pip uninstall protobuf
-RUN pip install --no-cache-dir --upgrade protobuf==3.20.0
 
 # Train the Rasa models
 RUN rasa train
