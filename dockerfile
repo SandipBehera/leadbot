@@ -6,6 +6,7 @@ WORKDIR /rasa
 
 # Upgrade pip
 RUN pip3 install --no-cache-dir --upgrade pip
+RUN pip3 install --no-cache-dir twilio
 
 # Copy the requirements file
 COPY requirements.txt .
