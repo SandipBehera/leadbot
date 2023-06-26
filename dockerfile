@@ -21,6 +21,8 @@ EXPOSE 5005
 
 # Install or upgrade websockets
 RUN pip install --no-cache-dir --upgrade websockets==9.1.0
+RUN pip uninstall protobuf
+RUN pip install --no-cache-dir --upgrade protobuf==3.20.0
 
 # Train the Rasa models
 RUN rasa train
