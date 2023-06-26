@@ -8,7 +8,7 @@ WORKDIR /rasa
 RUN pip3 install --no-cache-dir --upgrade pip
 RUN pip3 install --no-cache-dir twilio
 RUN pip3 install --no-cache-dir websockets==10.
-
+RUN pip3 install --no-cache-dir protobuf==3.20
 # Copy the requirements file
 COPY requirements.txt .
 
