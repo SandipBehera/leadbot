@@ -19,6 +19,8 @@ COPY . .
 # Expose the Rasa port
 EXPOSE 5005
 
+# Install or upgrade websockets
+RUN pip install --no-cache-dir --upgrade websockets==9.1.0
 
 # Train the Rasa models
 RUN rasa train
