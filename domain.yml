@@ -7,6 +7,8 @@ intents:
   - supply_contact_phone
   - supply_service_info
   - take_service_info
+  - website_features
+  - additional_help
   # - goodbye
   # - affirm
   # - deny
@@ -88,6 +90,16 @@ responses:
   
   utter_default_response:
   - text: "I'm sorry, I didn't understand. Could you please rephrase your question?"
+
+  utter_ask_website_feature:
+  - text: "What feature would you like to add on your {service}?"
+
+  utter_connect_to_sales:
+  - text: "I am connecting to my sales executive.We can discuss your specific requirements and customize the features according to your needs."
+
+  utter_thanks_for_providing_info:
+  - text: "Thank you {user_name} for provided your requirements. i have noted down your requirements and forwared to my sales team. They will contact you soon. Apart from this, is there anything else I can help you with?"
+
 
 actions:
 - action_default_response

@@ -160,4 +160,55 @@ nlu:
     - actually I want to develop a [web app](service)
     - actually I want to develop a [web application](service)
 
-    
+- intent: website_features
+  examples: |
+    - Responsive design for optimal display on different devices
+    - Navigation menu for easy browsing
+    - Contact form for user inquiries
+    - Image and video galleries
+    - Blog or news section for regular updates
+    - Social media integration
+    - E-commerce capabilities for selling products online
+    - Payment gateway integration for secure transactions
+    - User authentication and account management
+    - Search functionality for easy content discovery
+    - Integration with third-party services (e.g., CRM, email marketing tools)
+    - Analytics and reporting tools to track website performance
+    - Content management system (CMS) for easy content updates
+    - Search engine optimization (SEO) for better search rankings
+    - Online booking or reservation system
+    - Live chat or customer support feature
+    - Multi-language support for a global audience
+    - Content management system (CMS) for easy content updates
+    - Event management or ticketing system
+    - Integration with analytics tools to track website performance
+    - User reviews and ratings system
+    - Newsletters or email subscription functionality
+    - Integration with social media platforms for sharing content
+    - Product catalog and listing
+    - Shopping cart and checkout process
+    - Inventory management
+    - Order tracking and management
+    - Secure payment options
+    - Product search and filtering
+    - Customer reviews and ratings
+    - Wishlist or favorites functionality
+    - Discounts and promotional offers
+    - PayPal
+    - Stripe
+    - Square
+    - Braintree
+    - Authorize.Net
+    - 2Checkout
+    - PayU
+    - Razorpay
+    - Paytm
+
+- intent: additional_help
+  examples: |
+    - Do you offer website maintenance services?
+    - Can you help with SEO for my website?
+    - Do you provide hosting and domain registration?
+    - Can you assist with content creation?
+    - What other services do you offer?
+    - Apart from website development, are there any other areas you need assistance with?
