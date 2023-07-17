@@ -28,6 +28,22 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+import logging
+import sys
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s:%(levelname)s:%(message)s')
+
+stdout_handler = logging.StreamHandler(sys.stdout)
+stdout_handler.setLevel(logging.DEBUG)
+
+file_handler = logging.FileHandler('actions.log')
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(formatter)
+
+logger.addHandler(stdout_handler)
+logger.addHandler(file_handler)
 
 class ActionSubmitInfo(Action):
     def name(self) -> Text:
@@ -40,21 +56,23 @@ class ActionSubmitInfo(Action):
         email = tracker.get_slot("email")
         phone_number = tracker.get_slot("phone")
         
-        print("Name slot value:", name)
+        logger.info("Name slot value:", name)
+        logger.info("Email slot value:", email)
+        logger.info("Phone slot value:", phone_number)
         # Perform actions with the collected information
         # For example, you can store it in a database or perform further processing
 
         dispatcher.utter_message(text=f"Thank you, {name} for providing your information!")
 
-        return []
+        return "action_submit_info"
 
-class ActionDefaultResponse(Action):
-    def name(self) -> Text:
-        return "action_default_response"
+# class ActionDefaultResponse(Action):
+#     def name(self) -> Text:
+#         return "action_default_response"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        dispatcher.utter_message(response="utter_default_response")
-        return []
+#         dispatcher.utter_message(response="utter_default_response")
+#         return []

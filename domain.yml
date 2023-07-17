@@ -20,6 +20,7 @@ entities:
 - email
 - phone
 - service
+- feature
 
 slots:
   user_name:
@@ -43,6 +44,12 @@ slots:
     mappings:
     - type: from_entity
       entity: service
+  
+  feature:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: feature
 
 responses:
   # utter_greet:
@@ -102,6 +109,7 @@ responses:
 
 
 actions:
+- action_submit_info
 - action_default_response
 
 session_config:

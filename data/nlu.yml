@@ -162,47 +162,16 @@ nlu:
 
 - intent: website_features
   examples: |
-    - Responsive design for optimal display on different devices
-    - Navigation menu for easy browsing
-    - Contact form for user inquiries
-    - Image and video galleries
-    - Blog or news section for regular updates
-    - Social media integration
-    - E-commerce capabilities for selling products online
-    - Payment gateway integration for secure transactions
-    - User authentication and account management
-    - Search functionality for easy content discovery
-    - Integration with third-party services (e.g., CRM, email marketing tools)
-    - Analytics and reporting tools to track website performance
-    - Content management system (CMS) for easy content updates
-    - Search engine optimization (SEO) for better search rankings
-    - Online booking or reservation system
-    - Live chat or customer support feature
-    - Multi-language support for a global audience
-    - Content management system (CMS) for easy content updates
-    - Event management or ticketing system
-    - Integration with analytics tools to track website performance
-    - User reviews and ratings system
-    - Newsletters or email subscription functionality
-    - Integration with social media platforms for sharing content
-    - Product catalog and listing
-    - Shopping cart and checkout process
-    - Inventory management
-    - Order tracking and management
-    - Secure payment options
-    - Product search and filtering
-    - Customer reviews and ratings
-    - Wishlist or favorites functionality
-    - Discounts and promotional offers
-    - PayPal
-    - Stripe
-    - Square
-    - Braintree
-    - Authorize.Net
-    - 2Checkout
-    - PayU
-    - Razorpay
-    - Paytm
+   - i want to develop a website with [features](feature)
+   - i want to develop a website with [functionality](feature)
+   - i want to develop a website with [features](feature) like [login](feature)
+   - i want to develop a website with [functionality](feature) like [login](feature)
+   - my website should have [features](feature) like [login](feature)
+   - my website should have [responsive features](feature)
+   - i want to develop a website with [responsive features](feature)
+   - i need an [ecommerce website](feature)
+   - i need an [ecommerce website](feature) with [payment gateway](feature)
+
 
 - intent: additional_help
   examples: |
