@@ -6,9 +6,9 @@ def storeData(name, email, phone_number):
     conn = psycopg2.connect(
         host="localhost",
         port="5432",
-        dbname="your_database",
-        user="your_username",
-        password="your_password"
+        dbname="postgres",
+        user="postgres",
+        password="admin"
     )
 
     # Create a cursor object to execute SQL queries
