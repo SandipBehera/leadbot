@@ -1,0 +1,173 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  # - intent: goodbye
+  #   examples: |
+  #     - cu
+  #     - good by
+  #     - cee you later
+  #     - good night
+  #     - bye
+  #     - goodbye
+  #     - have a nice day
+  #     - see you around
+  #     - bye bye
+  #     - see you later
+
+  # - intent: affirm
+  #   examples: |
+  #     - yes
+  #     - y
+  #     - indeed
+  #     - of course
+  #     - that sounds good
+  #     - correct
+
+  # - intent: deny
+  #   examples: |
+  #     - no
+  #     - n
+  #     - never
+  #     - I don't think so
+  #     - don't like that
+  #     - no way
+  #     - not really
+
+  # - intent: mood_great
+  #   examples: |
+  #     - perfect
+  #     - great
+  #     - amazing
+  #     - feeling like a king
+  #     - wonderful
+  #     - I am feeling very good
+  #     - I am great
+  #     - I am amazing
+  #     - I am going to save the world
+  #     - super stoked
+  #     - extremely good
+  #     - so so perfect
+  #     - so good
+  #     - so perfect
+
+  # - intent: mood_unhappy
+  #   examples: |
+  #     - my day was horrible
+  #     - I am sad
+  #     - I don't feel very well
+  #     - I am disappointed
+  #     - super sad
+  #     - I'm so sad
+  #     - sad
+  #     - very sad
+  #     - unhappy
+  #     - not good
+  #     - not very good
+  #     - extremly sad
+  #     - so saad
+  #     - so sad
+
+  # - intent: bot_challenge
+  #   examples: |
+  #     - are you a bot?
+  #     - are you a human?
+  #     - am I talking to a bot?
+  #     - am I talking to a human?
+
+  - intent: supply_contact_name
+    examples: |
+      - My name is [john](user_name).
+      - name: [john](user_name) 
+      - Yeah sure. I'm [john](user_name).
+      - [john](user_name)
+      - Sure. It's [john](user_name).
+      - My name is [sarah](user_name).
+      - Call me [michael](user_name).
+      - I go by the name [emily](user_name).
+      - You can address me as [alex](user_name).
+      - [jessica](user_name) is my name.
+      - It's [ryan](user_name).
+      - I'm [amy](user_name).
+      - Just call me [chris](user_name).
+      - People know me as [sophie](user_name).
+      - [mark](user_name) is who I am.
+      - My name? [laura](user_name).
+      - I'm [daniel](user_name).
+      - Call me [olivia](user_name).
+      - I'm known as [william](user_name).
+      - My name's [ava](user_name).
+      - [jacob](user_name) is my name.
+      - I'm [mia](user_name).
+      - Just call me [ethan](user_name).
+      - People know me as [charlotte](user_name).
+
+  - intent: supply_contact_email
+    examples: |
+      - My email is [john@email.com](email)
+      - email is [john@email.com](email).
+      - email: [david@email.com](email) 
+      - Yeah sure. My email is [barbara@email.com](email).
+      - [susan@email.com](email)
+      - Sure.It is [fred@email.com](email).
+
+  - intent: supply_contact_phone
+    examples: |
+      - phone number is [1234567890](phone)
+      - phone: [1234567890](phone)
+      - Yeah sure. My phone number is [1234567890](phone)
+      - [1234567890](phone)
+      - Sure. It's [1234567890](phone).
+
+  - intent: supply_service_info
+    examples: |
+      - I want to know about your services
+      - What are your services
+      - What services do you provide
+      - What services do you offer
+
+  - intent: take_service_info
+    examples: |
+      - [website](service)
+      - [mobile app](service)
+      - [web app](service)
+      - [web application](service)
+      - [mobile application](service)
+      - [software](service)
+      - I want to develop a [website](service)
+      - actually I want to develop a [website](service)
+
+  - intent: website_features
+    examples: |
+      - i want to develop a website with [features](feature)
+      - i want to develop a website with [features](feature) like [login](feature)
+      - i want to develop a website with [functionality](feature) like [login](feature)
+      - my website should have [features](feature) like [login](feature)
+      - my website should have [responsive features](feature)
+      - i want to develop a website with [responsive features](feature)
+      - i need an [ecommerce website](feature)
+      - i need an [ecommerce website](feature) with [payment gateway](feature)
+
+  - intent: additional_help
+    examples: |
+      - Do you offer website maintenance services?
+      - Can you help with SEO for my website?
+      - Do you provide hosting and domain registration?
+      - Can you assist with content creation?
+      - What other services do you offer?
+      - Apart from website development, are there any other areas you need assistance with?
