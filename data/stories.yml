@@ -11,6 +11,7 @@ stories:
       - intent: supply_contact_email
       - action: utter_ask_for_contact_phone
       - intent: supply_contact_phone
+      - action: action_submit_info
       - action: utter_say_thank_you
       - action: utter_ask_for_help
 
