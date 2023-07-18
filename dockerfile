@@ -10,7 +10,7 @@ RUN pip3 install --no-cache-dir --upgrade pip
 COPY requirements.txt .
 
 # Install dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --upgrade rasa
 
 # Copy the source code to the container
 COPY . .
