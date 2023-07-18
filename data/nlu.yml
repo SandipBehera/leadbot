@@ -99,7 +99,6 @@ nlu:
       - Sure. It's [john](user_name).
       - My name is [sarah](user_name).
       - Call me [michael](user_name).
-      - I go by the name [emily](user_name).
       - You can address me as [alex](user_name).
       - [jessica](user_name) is my name.
       - It's [ryan](user_name).
@@ -107,7 +106,6 @@ nlu:
       - Just call me [chris](user_name).
       - People know me as [sophie](user_name).
       - [mark](user_name) is who I am.
-      - My name? [laura](user_name).
       - I'm [daniel](user_name).
       - Call me [olivia](user_name).
       - I'm known as [william](user_name).
