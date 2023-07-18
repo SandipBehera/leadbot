@@ -25,4 +25,4 @@ EXPOSE 5005
 RUN rasa train
 
 # Set the default command to run Rasa
-CMD ["rasa", "run", "actions", "--cors", "*", "--debug"]
+CMD ["rasa", "run", "--cors", "*", "--debug"]
