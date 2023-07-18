@@ -44,7 +44,7 @@ action_endpoint:
 tracker_store:
   type: SQL
   dialect: "postgresql"
-  url: localhost
+  url: 18.224.227.40
   port: 5432
   db: postgres
   username: postgres
