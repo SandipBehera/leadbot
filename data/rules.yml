@@ -1,7 +1,6 @@
-version: "3.0"
+version: "3.1"
 
 rules:
-
 # - rule: Handle out-of-scope questions
 #   condition:
 #     - active_loop: null
