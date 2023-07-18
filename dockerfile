@@ -6,6 +6,9 @@ WORKDIR /rasa
 
 # Upgrade pip
 RUN pip3 install --no-cache-dir --upgrade pip
+RUN apt-get update \
+    && apt-get install -y build-essential
+RUN pip3 install --upgrade pip setuptools
 RUN pip3 install --upgrade PyYAML==5.4.1
 # Copy the requirements file
 COPY requirements.txt .
