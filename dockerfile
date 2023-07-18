@@ -19,7 +19,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the Rasa port
-EXPOSE 5005
+EXPOSE 5005 5055
 
 # Train the Rasa models
 RUN rasa train
