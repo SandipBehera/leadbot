@@ -1,20 +1,19 @@
 # Base image
-FROM python:3.10.6
+FROM python:3.8.2
 
 # Set the working directory in the container
 WORKDIR /rasa
 
 # Upgrade pip
 RUN pip3 install --no-cache-dir --upgrade pip
-RUN apt-get update \
-    && apt-get install -y build-essential
-RUN pip3 install --upgrade pip setuptools
-RUN pip3 install --upgrade PyYAML==5.4.1
+RUN pip3 install --no-cache-dir twilio
+RUN pip3 install --no-cache-dir websockets==10.
+RUN pip3 install --no-cache-dir protobuf==3.20
 # Copy the requirements file
 COPY requirements.txt .
 
 # Install dependencies
-RUN pip3 install --upgrade rasa
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy the source code to the container
 COPY . .
