@@ -1,5 +1,5 @@
 # Base image
-FROM python:3.8.2
+FROM python:3.10.6
 
 # Set the working directory in the container
 WORKDIR /rasa
