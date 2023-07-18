@@ -70,11 +70,11 @@ class ActionSubmitInfo(Action):
         # storeData(name, email, phone_number)/
         try:
             conn = psycopg2.connect(
-                host="localhost",
+                host="18.224.227.40",
                 port="5432",
-                dbname="your_database",
-                user="your_username",
-                password="your_password"
+                dbname="postgres",
+                user="postgres",
+                password="admin"
             )
 
             # Create a cursor object to execute SQL queries
